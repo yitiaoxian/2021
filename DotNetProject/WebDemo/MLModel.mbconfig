@@ -1,0 +1,592 @@
+﻿{
+  "TrainingConfigurationVersion": 0,
+  "TrainingTime": 10,
+  "Scenario": {
+    "ScenarioType": "Regression"
+  },
+  "DataSource": {
+    "DataSourceType": "TabularFile",
+    "FilePath": "F:\\2021秋\\DotNetProject\\archive\\WineQuality-RedWine.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "fixed acidity",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false
+      },
+      {
+        "ColumnName": "volatile acidity",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false
+      },
+      {
+        "ColumnName": "citric acid",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false
+      },
+      {
+        "ColumnName": "residual sugar",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false
+      },
+      {
+        "ColumnName": "chlorides",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false
+      },
+      {
+        "ColumnName": "free sulfur dioxide",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false
+      },
+      {
+        "ColumnName": "total sulfur dioxide",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false
+      },
+      {
+        "ColumnName": "density",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false
+      },
+      {
+        "ColumnName": "pH",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false
+      },
+      {
+        "ColumnName": "sulphates",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false
+      },
+      {
+        "ColumnName": "alcohol",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false
+      },
+      {
+        "ColumnName": "quality",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true
+      }
+    ]
+  },
+  "Environment": {
+    "EnvironmentType": "LocalCPU"
+  },
+  "RunHistory": {
+    "Trials": [
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.42945485374172909,
+        "RuntimeInSeconds": 0.075000002980232239
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.42073588841905962,
+        "RuntimeInSeconds": 0.092000000178813934
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.41813822661616029,
+        "RuntimeInSeconds": 0.1379999965429306
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.40964199016530511,
+        "RuntimeInSeconds": 0.052000001072883606
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.40544147820693932,
+        "RuntimeInSeconds": 0.076999999582767487
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.39318446392636441,
+        "RuntimeInSeconds": 0.059999998658895493
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.39277688937608379,
+        "RuntimeInSeconds": 0.064000003039836884
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.39121999680348607,
+        "RuntimeInSeconds": 0.046000000089406967
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.38687623638746116,
+        "RuntimeInSeconds": 0.0820000022649765
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.38425578021676043,
+        "RuntimeInSeconds": 0.061999998986721039
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.374620545687524,
+        "RuntimeInSeconds": 0.064999997615814209
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.37348756656423043,
+        "RuntimeInSeconds": 0.1120000034570694
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.37301179900885273,
+        "RuntimeInSeconds": 0.075999997556209564
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.37257411583172229,
+        "RuntimeInSeconds": 0.097999997437000275
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.370856074003455,
+        "RuntimeInSeconds": 0.12700000405311585
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.37022229186370081,
+        "RuntimeInSeconds": 0.093000002205371857
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.36980210803645452,
+        "RuntimeInSeconds": 0.0729999989271164
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.36488718339579707,
+        "RuntimeInSeconds": 0.1120000034570694
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.36384282393945366,
+        "RuntimeInSeconds": 0.048999998718500137
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.36131725082412613,
+        "RuntimeInSeconds": 0.076999999582767487
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.3591946532504271,
+        "RuntimeInSeconds": 0.079000003635883331
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.35870392384478811,
+        "RuntimeInSeconds": 0.11299999803304672
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.35758179488450048,
+        "RuntimeInSeconds": 0.0729999989271164
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.35691632583364563,
+        "RuntimeInSeconds": 0.093000002205371857
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.3543025657161043,
+        "RuntimeInSeconds": 0.11999999731779099
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.35369238556818572,
+        "RuntimeInSeconds": 0.078000001609325409
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.35369238556818572,
+        "RuntimeInSeconds": 0.071999996900558472
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.35266648439805404,
+        "RuntimeInSeconds": 0.054999999701976776
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.35089713230123176,
+        "RuntimeInSeconds": 0.096000000834465027
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.34859098557963875,
+        "RuntimeInSeconds": 0.076999999582767487
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.34639429893880747,
+        "RuntimeInSeconds": 0.10599999874830246
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.34485658774154315,
+        "RuntimeInSeconds": 0.074000000953674316
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.34365096895539804,
+        "RuntimeInSeconds": 0.054000001400709152
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.34301323925315597,
+        "RuntimeInSeconds": 0.079000003635883331
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.34290059126108796,
+        "RuntimeInSeconds": 0.10999999940395355
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.342631416072942,
+        "RuntimeInSeconds": 0.076999999582767487
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.34193505020737669,
+        "RuntimeInSeconds": 0.089000001549720764
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.34168588688220014,
+        "RuntimeInSeconds": 0.076999999582767487
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.34097583688975097,
+        "RuntimeInSeconds": 0.11100000143051148
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.34083003136692591,
+        "RuntimeInSeconds": 0.079000003635883331
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.34081257025931433,
+        "RuntimeInSeconds": 0.079999998211860657
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.34081010053169436,
+        "RuntimeInSeconds": 0.075000002980232239
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.34032502432590817,
+        "RuntimeInSeconds": 0.089000001549720764
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.34021040041165795,
+        "RuntimeInSeconds": 0.090999998152256012
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.34016752883386736,
+        "RuntimeInSeconds": 0.092000000178813934
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.33979313405178491,
+        "RuntimeInSeconds": 0.093000002205371857
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.33915710547507449,
+        "RuntimeInSeconds": 0.057000000029802322
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.33886855703670116,
+        "RuntimeInSeconds": 0.090000003576278687
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.33793855118699079,
+        "RuntimeInSeconds": 0.061000000685453415
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.33709077070911342,
+        "RuntimeInSeconds": 0.0689999982714653
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.33705136163230365,
+        "RuntimeInSeconds": 0.061000000685453415
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.33683608774260765,
+        "RuntimeInSeconds": 0.093000002205371857
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.33240037560016866,
+        "RuntimeInSeconds": 0.1080000028014183
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.33216749360347364,
+        "RuntimeInSeconds": 0.074000000953674316
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.33208214208963516,
+        "RuntimeInSeconds": 0.17499999701976776
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.33188205358062328,
+        "RuntimeInSeconds": 0.0729999989271164
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.33106649209657346,
+        "RuntimeInSeconds": 0.090000003576278687
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.32899219353733644,
+        "RuntimeInSeconds": 0.075000002980232239
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.32706517296382287,
+        "RuntimeInSeconds": 0.10100000351667404
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.32706517296382287,
+        "RuntimeInSeconds": 0.093000002205371857
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.32687885474350387,
+        "RuntimeInSeconds": 0.074000000953674316
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.32487815789366714,
+        "RuntimeInSeconds": 0.092000000178813934
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.32420589131736988,
+        "RuntimeInSeconds": 0.089000001549720764
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.32229107347235808,
+        "RuntimeInSeconds": 0.089000001549720764
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.31891425221690528,
+        "RuntimeInSeconds": 0.093999996781349182
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.31404773921572704,
+        "RuntimeInSeconds": 0.14100000262260437
+      },
+      {
+        "TrainerName": "FastForestRegression",
+        "Score": 0.30965010784556768,
+        "RuntimeInSeconds": 0.67900002002716064
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.30440320581601543,
+        "RuntimeInSeconds": 0.090999998152256012
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.29728384276174513,
+        "RuntimeInSeconds": 0.081000000238418579
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.29663631076295882,
+        "RuntimeInSeconds": 0.075000002980232239
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.29463839570304573,
+        "RuntimeInSeconds": 0.0560000017285347
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.28080155493160563,
+        "RuntimeInSeconds": 0.0949999988079071
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.27110873912736666,
+        "RuntimeInSeconds": 0.10999999940395355
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.26030593999641305,
+        "RuntimeInSeconds": 0.061999998986721039
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.251804370859083,
+        "RuntimeInSeconds": 0.046999998390674591
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.22464925863156815,
+        "RuntimeInSeconds": 0.075000002980232239
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.21213530506039269,
+        "RuntimeInSeconds": 0.075999997556209564
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.20853374718115003,
+        "RuntimeInSeconds": 0.18400000035762787
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.20820028066046747,
+        "RuntimeInSeconds": 0.093000002205371857
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.19016523254207396,
+        "RuntimeInSeconds": 0.12399999797344208
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.18595520133530641,
+        "RuntimeInSeconds": 0.15399999916553497
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.18153765627830731,
+        "RuntimeInSeconds": 0.074000000953674316
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.15130924313044292,
+        "RuntimeInSeconds": 0.061000000685453415
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.1076652295920304,
+        "RuntimeInSeconds": 0.12800000607967377
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.089690276467582541,
+        "RuntimeInSeconds": 0.075000002980232239
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": 0.078287396089780192,
+        "RuntimeInSeconds": 0.071000002324581146
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.071160748163506815,
+        "RuntimeInSeconds": 0.089000001549720764
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.046390150609345038,
+        "RuntimeInSeconds": 0.0560000017285347
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": 0.043957566756662181,
+        "RuntimeInSeconds": 0.061000000685453415
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.023775115058249807,
+        "RuntimeInSeconds": 0.0729999989271164
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.021241891172291694,
+        "RuntimeInSeconds": 0.054999999701976776
+      },
+      {
+        "TrainerName": "LightGbmRegression",
+        "Score": -0.0045254095577704767,
+        "RuntimeInSeconds": 0.048999998718500137
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": -0.0052627979126167457,
+        "RuntimeInSeconds": 0.079999998211860657
+      },
+      {
+        "TrainerName": "SdcaRegression",
+        "Score": -0.67017329721769414,
+        "RuntimeInSeconds": 0.125
+      },
+      {
+        "TrainerName": "FastTreeRegression",
+        "Score": -5.653641791990089,
+        "RuntimeInSeconds": 0.061000000685453415
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -11.533326712074167,
+        "RuntimeInSeconds": 0.13899999856948853
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -18.083455676715481,
+        "RuntimeInSeconds": 0.17000000178813934
+      },
+      {
+        "TrainerName": "FastTreeTweedieRegression",
+        "Score": -29.488293553300643,
+        "RuntimeInSeconds": 0.093000002205371857
+      },
+      {
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.32616096977344577,
+        "RuntimeInSeconds": 0.093999996781349182
+      }
+    ],
+    "Pipeline": "[{\"EstimatorType\":\"ReplaceMissingValues\",\"Inputs\":[\"fixed acidity\",\"volatile acidity\",\"citric acid\",\"residual sugar\",\"chlorides\",\"free sulfur dioxide\",\"total sulfur dioxide\",\"density\",\"pH\",\"sulphates\",\"alcohol\"],\"Outputs\":[\"fixed acidity\",\"volatile acidity\",\"citric acid\",\"residual sugar\",\"chlorides\",\"free sulfur dioxide\",\"total sulfur dioxide\",\"density\",\"pH\",\"sulphates\",\"alcohol\"]},{\"EstimatorType\":\"Concatenate\",\"Inputs\":[\"fixed acidity\",\"volatile acidity\",\"citric acid\",\"residual sugar\",\"chlorides\",\"free sulfur dioxide\",\"total sulfur dioxide\",\"density\",\"pH\",\"sulphates\",\"alcohol\"],\"Outputs\":[\"Features\"]},{\"LabelColumnName\":\"quality\",\"FeatureColumnName\":\"Features\",\"NumberOfLeaves\":\"6\",\"MinimumExampleCountPerLeaf\":\"99\",\"LearningRate\":\"1\",\"NumberOfIterations\":\"63\",\"SubsampleFraction\":\"0.554704640400417\",\"FeatureFraction\":\"0.825527310116115\",\"L1Regularization\":\"1.45419038116135E-07\",\"L2Regularization\":\"3.08876495222331E-07\",\"MaximumBinCountPerFeature\":\"946\",\"EstimatorType\":\"LightGbmRegression\",\"Inputs\":[\"quality\"],\"Outputs\":[\"Features\"]}]",
+    "MetricName": "RSquared"
+  }
+}

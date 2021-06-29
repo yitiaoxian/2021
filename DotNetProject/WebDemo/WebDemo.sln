@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDemo", "WebDemo.csproj", "{45A25124-26F9-49A1-AFC3-1218C1E230D1}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonRegressionApplication1", "..\PythonRegressionApplication1\PythonRegressionApplication1.pyproj", "{DABC8686-2CD8-413C-99BB-4A4C4632ED42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLModel_WebApi1", "..\MLModel_WebApi1\MLModel_WebApi1.csproj", "{CF85FDBE-F6AD-4B34-A06A-ACF47C46BACE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDemo", "..\WpfDemo\WpfDemo.csproj", "{C717FA5D-56D0-4460-B300-4C3D4092C9D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwaggerApi", "..\SwaggerApi\SwaggerApi.csproj", "{1043994A-1FC6-46B0-AD19-1903720E7D03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\Common\Common.csproj", "{78198E9F-251D-4941-AC0E-99F02416053C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45A25124-26F9-49A1-AFC3-1218C1E230D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A25124-26F9-49A1-AFC3-1218C1E230D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A25124-26F9-49A1-AFC3-1218C1E230D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A25124-26F9-49A1-AFC3-1218C1E230D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DABC8686-2CD8-413C-99BB-4A4C4632ED42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DABC8686-2CD8-413C-99BB-4A4C4632ED42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF85FDBE-F6AD-4B34-A06A-ACF47C46BACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF85FDBE-F6AD-4B34-A06A-ACF47C46BACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF85FDBE-F6AD-4B34-A06A-ACF47C46BACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF85FDBE-F6AD-4B34-A06A-ACF47C46BACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C717FA5D-56D0-4460-B300-4C3D4092C9D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C717FA5D-56D0-4460-B300-4C3D4092C9D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C717FA5D-56D0-4460-B300-4C3D4092C9D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C717FA5D-56D0-4460-B300-4C3D4092C9D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1043994A-1FC6-46B0-AD19-1903720E7D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1043994A-1FC6-46B0-AD19-1903720E7D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1043994A-1FC6-46B0-AD19-1903720E7D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1043994A-1FC6-46B0-AD19-1903720E7D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78198E9F-251D-4941-AC0E-99F02416053C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78198E9F-251D-4941-AC0E-99F02416053C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78198E9F-251D-4941-AC0E-99F02416053C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78198E9F-251D-4941-AC0E-99F02416053C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF891F25-A19B-4291-8285-57694E599B3C}
+	EndGlobalSection
+EndGlobal

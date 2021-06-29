@@ -1,0 +1,12 @@
+F:\2021秋\DotNetProject\Common\bin\Debug\net5.0\Common.deps.json
+F:\2021秋\DotNetProject\Common\bin\Debug\net5.0\Common.dll
+F:\2021秋\DotNetProject\Common\bin\Debug\net5.0\ref\Common.dll
+F:\2021秋\DotNetProject\Common\bin\Debug\net5.0\Common.pdb
+F:\2021秋\DotNetProject\Common\obj\Debug\net5.0\Common.csproj.AssemblyReference.cache
+F:\2021秋\DotNetProject\Common\obj\Debug\net5.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+F:\2021秋\DotNetProject\Common\obj\Debug\net5.0\Common.AssemblyInfoInputs.cache
+F:\2021秋\DotNetProject\Common\obj\Debug\net5.0\Common.AssemblyInfo.cs
+F:\2021秋\DotNetProject\Common\obj\Debug\net5.0\Common.csproj.CoreCompileInputs.cache
+F:\2021秋\DotNetProject\Common\obj\Debug\net5.0\Common.dll
+F:\2021秋\DotNetProject\Common\obj\Debug\net5.0\ref\Common.dll
+F:\2021秋\DotNetProject\Common\obj\Debug\net5.0\Common.pdb

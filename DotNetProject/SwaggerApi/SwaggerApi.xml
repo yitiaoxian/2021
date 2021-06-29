@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SwaggerApi</name>
+    </assembly>
+    <members>
+        <member name="M:SwaggerApi.Controllers.UserController.Login(System.String)">
+            <summary>
+            登录
+            </summary>
+            <param name="role">用户</param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApi.Controllers.WeatherForecastController.Get">
+            <summary>
+            Get测试方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApi.Helper.JwtHelper.IssueJwt(SwaggerApi.Models.TokenModel)">
+            <summary>
+            颁发JWT字符串
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="P:SwaggerApi.Models.TokenModel.Uid">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:SwaggerApi.Models.TokenModel.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="M:SwaggerApi.LogHelper.Error(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            输出 ERROR 日志
+            </summary>
+            <param name="message">文本消息</param>
+        </member>
+        <member name="M:SwaggerApi.LogHelper.Error(System.Exception,System.String,System.String,System.Int32)">
+            <summary>
+            输出 ERROR 日志
+            </summary>
+            <param name="message">异常消息</param>
+        </member>
+        <member name="M:SwaggerApi.LogHelper.Warn(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            输出 WARN 日志
+            </summary>
+            <param name="message">文本消息</param>
+        </member>
+        <member name="M:SwaggerApi.LogHelper.Warn(System.Exception,System.String,System.String,System.Int32)">
+            <summary>
+            输出 WARN 日志
+            </summary>
+            <param name="message">异常消息</param>
+        </member>
+        <member name="M:SwaggerApi.LogHelper.Info(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            输出 INFO 日志
+            </summary>
+            <param name="message">文本消息</param>
+        </member>
+        <member name="M:SwaggerApi.LogHelper.Info(System.Exception,System.String,System.String,System.Int32)">
+            <summary>
+            输出 INFO 日志
+            </summary>
+            <param name="message">异常消息</param>
+        </member>
+        <member name="M:SwaggerApi.LogHelper.Debug(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            输出 DEBUG 日志
+            </summary>
+            <param name="message">文本消息</param>
+        </member>
+        <member name="M:SwaggerApi.LogHelper.Debug(System.Exception,System.String,System.String,System.Int32)">
+            <summary>
+            输出 DEBUG 日志
+            </summary>
+            <param name="message">异常消息</param>
+        </member>
+        <member name="M:SwaggerApi.LogHelper.Trace(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            输出 TRACE 日志
+            </summary>
+            <param name="message">文本消息</param>
+        </member>
+        <member name="M:SwaggerApi.LogHelper.Trace(System.Exception,System.String,System.String,System.Int32)">
+            <summary>
+            输出 TRACE 日志
+            </summary>
+            <param name="message">异常消息</param>
+        </member>
+        <member name="M:SwaggerApi.LogHelper.Log(NLog.LogLevel,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            日志输出
+            </summary>
+            <param name="level">日志级别</param>
+            <param name="message">文本消息</param>
+            <param name="memberName">方法名</param>
+            <param name="sourceFilePath">文件</param>
+            <param name="sourceLineNumber">行号</param>
+        </member>
+        <member name="M:SwaggerApi.LogHelper.Log(NLog.LogLevel,System.Exception,System.String,System.String,System.Int32)">
+            <summary>
+            日志输出
+            </summary>
+            <param name="level">日志级别</param>
+            <param name="throwable">异常消息</param>
+            <param name="memberName">方法名</param>
+            <param name="sourceFilePath">文件</param>
+            <param name="sourceLineNumber">行号</param>
+        </member>
+        <member name="M:SwaggerApi.LogHelper.GetCaller(System.String,System.String,System.Int32)">
+            <summary>
+            获取调用者信息
+            </summary>
+            <param name="memberName">方法名</param>
+            <param name="sourceFilePath">文件</param>
+            <param name="sourceLineNumber">行号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApi.LogHelper.GetExceptionInfo(System.Exception)">
+            <summary>
+            获取详细的异常描述
+            </summary>
+            <param name="ex">Exception</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
