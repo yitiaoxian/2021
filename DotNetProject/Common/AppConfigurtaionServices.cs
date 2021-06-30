@@ -4,6 +4,9 @@ using Microsoft.Extensions.Configuration.Json;
 
 namespace Common
 {
+    /// <summary>
+    /// appsettings.json读取配置文件的类
+    /// </summary>
     public class AppConfigurtaionServices
     {
         public static IConfiguration Configuration { get; set; }

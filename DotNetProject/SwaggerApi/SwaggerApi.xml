@@ -4,6 +4,17 @@
         <name>SwaggerApi</name>
     </assembly>
     <members>
+        <member name="T:SwaggerApi.Controllers.UserController">
+            <summary>
+            user
+            </summary>
+        </member>
+        <member name="M:SwaggerApi.Controllers.UserController.#ctor(System.Collections.Generic.IEnumerable{SwaggerApi.ITestService})">
+            <summary>
+            构造方法
+            </summary>
+            <param name="services"></param>
+        </member>
         <member name="M:SwaggerApi.Controllers.UserController.Login(System.String)">
             <summary>
             登录
@@ -11,10 +22,57 @@
             <param name="role">用户</param>
             <returns></returns>
         </member>
+        <member name="M:SwaggerApi.Controllers.UserController.TestServiceA(System.String)">
+            <summary>
+            TestServiceA
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApi.Controllers.UserController.TestServiceB(System.String)">
+            <summary>
+            TestServiceB
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApi.Controllers.UserController.TestJsonInput(SwaggerApi.Controllers.User)">
+            <summary>
+            
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SwaggerApi.Controllers.WeatherForecastController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SwaggerApi.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{SwaggerApi.Controllers.WeatherForecastController},System.Collections.Generic.IEnumerable{SwaggerApi.ITestService})">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+            <param name="services"></param>
+        </member>
         <member name="M:SwaggerApi.Controllers.WeatherForecastController.Get">
             <summary>
             Get测试方法
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApi.Controllers.WeatherForecastController.TestServiceA(System.String)">
+            <summary>
+            TestServiceA
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApi.Controllers.WeatherForecastController.TestServiceB(System.String)">
+            <summary>
+            TestServiceB
+            </summary>
+            <param name="str"></param>
             <returns></returns>
         </member>
         <member name="M:SwaggerApi.Helper.JwtHelper.IssueJwt(SwaggerApi.Models.TokenModel)">
@@ -22,6 +80,63 @@
             颁发JWT字符串
             </summary>
             <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SwaggerApi.Implements.TestServiceA">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SwaggerApi.Implements.TestServiceA.MultiServicesTest(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApi.Implements.TestServiceA.MultiServicesTestAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SwaggerApi.Implements.TestServiceB">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SwaggerApi.Implements.TestServiceB.MultiServicesTest(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApi.Implements.TestServiceB.MultiServicesTestAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SwaggerApi.ITestService">
+            <summary>
+            测试服务接口
+            </summary>
+        </member>
+        <member name="M:SwaggerApi.ITestService.MultiServicesTestAsync(System.String)">
+            <summary>
+            多个服务异步测试
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApi.ITestService.MultiServicesTest(System.String)">
+            <summary>
+            多个服务同步测试
+            </summary>
+            <param name="str"></param>
             <returns></returns>
         </member>
         <member name="P:SwaggerApi.Models.TokenModel.Uid">
@@ -33,6 +148,79 @@
             <summary>
             角色
             </summary>
+        </member>
+        <member name="T:SwaggerApi.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SwaggerApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:SwaggerApi.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SwaggerApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            给容器配置服务
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:SwaggerApi.ComWebResponseEntity">
+            <summary>
+            web api 返回的数据模型
+            </summary>
+        </member>
+        <member name="P:SwaggerApi.ComWebResponseEntity.Result">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="P:SwaggerApi.ComWebResponseEntity.Error">
+            <summary>
+            失败原因
+            </summary>
+        </member>
+        <member name="P:SwaggerApi.ComWebResponseEntity.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:SwaggerApi.ComWebResponseEntity`1.Result">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="P:SwaggerApi.ComWebResponseEntity`1.Error">
+            <summary>
+            失败原因
+            </summary>
+        </member>
+        <member name="P:SwaggerApi.ComWebResponseEntity`1.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="M:SwaggerApi.JsonUtil.ToJson(System.Object)">
+            <summary>
+            将指定的json对象序列化成json数据
+            </summary>
+            <param name="obj">要序列化的对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApi.JsonUtil.ToObject``1(System.String)">
+            <summary>
+            将json数据反序列化成指定对象
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="json">json数据</param>
+            <returns></returns>
         </member>
         <member name="M:SwaggerApi.LogHelper.Error(System.String,System.String,System.String,System.Int32)">
             <summary>
