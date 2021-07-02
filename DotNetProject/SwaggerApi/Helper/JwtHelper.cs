@@ -11,6 +11,10 @@ using SwaggerApi.Models;
 
 namespace SwaggerApi.Helper
 {
+ 
+    /// <summary>
+    /// 
+    /// </summary>
     public class JwtHelper
     {
         /// <summary>
@@ -51,6 +55,11 @@ namespace SwaggerApi.Helper
             var encodedJwt = jwtHandler.WriteToken(jwt);
             return encodedJwt;
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="jwtStr"></param>
+        /// <returns></returns>
         public static TokenModel SerializeJwt(string jwtStr)
         {
             var jwtHandler = new JwtSecurityTokenHandler();

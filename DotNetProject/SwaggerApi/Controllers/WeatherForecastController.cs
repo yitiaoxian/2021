@@ -83,5 +83,22 @@ namespace SwaggerApi.Controllers
 
             return new ComWebResponseEntity { Result = true,Content= testServiceA.MultiServicesTest(str) } ;
         }
+        /// <summary>
+        /// TestJsonSeriliza
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("TestJsonSeriliza")]
+        public async Task<ComWebResponseEntity> TestJsonSeriliza(string str)
+        {
+            List<double> a = new List<double> {1.23,123.2,1.2 };
+            string b = a.ToJson();
+            List<double> a1 = new();
+            a1 = b.ToObject<List<double>>();
+            a1.RemoveAt(2);
+            List<double> a2 = a;
+            return new ComWebResponseEntity { Result = true, Content = testServiceA.MultiServicesTest(str) };
+        }
     }
 }

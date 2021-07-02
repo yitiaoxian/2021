@@ -121,10 +121,44 @@ namespace SwaggerApi.Controllers
                 result = a
             });
         }
+        /// <summary>
+        /// /
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("TestQueue")]
+        [NonAction]
+        public async Task<IActionResult> TestQueue(int i)
+        {
+            Queue<User> users = new Queue<User>();
+            User u = new User();
+            await Task.Run(()=> {
+                for (int j = 0; j < 10; j++)
+                {
+                    users.Enqueue(new User
+                    {
+                        Gender = $"gender+{j}",
+                        Name = $"name+{j}"
+                    });
+                }
+                u = users.Peek();
+            });
+            return Ok(u);         
+        }
     }
-   public class User
+   /// <summary>
+   /// 
+   /// </summary>
+    public class User
     {
+        /// <summary>
+        /// 
+        /// </summary>
        public string Gender { set; get; }
+        /// <summary>
+        /// 
+        /// </summary>
        public string Name { set; get; }
     }
 }

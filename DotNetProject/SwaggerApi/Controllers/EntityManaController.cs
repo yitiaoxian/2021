@@ -7,20 +7,29 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SwaggerApi.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    [Route("[Controller]")]
+    [ApiController]
     public class EntityManaController : Controller
     {
+        [HttpGet]
         // GET: EntityManaController
+        [Route("Index")]
         public ActionResult Index()
         {
             return View();
         }
-
+        [HttpGet]
+        [Route("Details")]
         // GET: EntityManaController/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
-
+        [HttpGet]
+        [Route("Create")]
         // GET: EntityManaController/Create
         public ActionResult Create()
         {
@@ -41,7 +50,7 @@ namespace SwaggerApi.Controllers
                 return View();
             }
         }
-
+        [HttpGet]
         // GET: EntityManaController/Edit/5
         public ActionResult Edit(int id)
         {
@@ -50,6 +59,7 @@ namespace SwaggerApi.Controllers
 
         // POST: EntityManaController/Edit/5
         [HttpPost]
+        [Route("Edit")]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
         {
@@ -62,7 +72,8 @@ namespace SwaggerApi.Controllers
                 return View();
             }
         }
-
+        [HttpGet]
+        [Route("Delete")]
         // GET: EntityManaController/Delete/5
         public ActionResult Delete(int id)
         {
@@ -71,6 +82,7 @@ namespace SwaggerApi.Controllers
 
         // POST: EntityManaController/Delete/5
         [HttpPost]
+        [Route("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
         {

@@ -18,11 +18,20 @@ namespace WpfDemo
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow 
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+        private void LaunchGitHubSite(object sender, RoutedEventArgs e)
+        {
+            // Launch the GitHub site...
+        }
+
+        private void DeployCupCakes(object sender, RoutedEventArgs e)
+        {
+            // deploy some CupCakes...
         }
     }
 }
