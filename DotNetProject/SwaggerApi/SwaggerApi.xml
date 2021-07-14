@@ -218,6 +218,16 @@
             </summary>
             <param name="services"></param>
         </member>
+        <member name="T:SwaggerApi.AppConfigurtaionServices">
+            <summary>
+            appsettings.json读取配置文件的类
+            </summary>
+        </member>
+        <member name="P:SwaggerApi.AppConfigurtaionServices.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:SwaggerApi.ComWebResponseEntity">
             <summary>
             web api 返回的数据模型
@@ -362,6 +372,17 @@
             获取详细的异常描述
             </summary>
             <param name="ex">Exception</param>
+            <returns></returns>
+        </member>
+        <member name="T:SwaggerApi.ToolKit.RedisTool">
+            <summary>
+            redis工具类
+            </summary>
+        </member>
+        <member name="M:SwaggerApi.ToolKit.RedisTool.GetConnection">
+            <summary>
+            获取redis连接
+            </summary>
             <returns></returns>
         </member>
     </members>

@@ -7,6 +7,6 @@
     <ActiveDebugProfile>SwaggerApi</ActiveDebugProfile>
     <Controller_SelectedScaffolderID>ApiControllerEmptyScaffolder</Controller_SelectedScaffolderID>
     <Controller_SelectedScaffolderCategoryPath>root/Common/Api</Controller_SelectedScaffolderCategoryPath>
-    <NameOfLastUsedPublishProfile>F:\2021秋\DotNetProject\SwaggerApi\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>F:\2021秋\DotNetProject\SwaggerApi\Properties\PublishProfiles\_myrepo_.azurecr.io.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

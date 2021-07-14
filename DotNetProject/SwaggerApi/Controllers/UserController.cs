@@ -67,7 +67,7 @@ namespace SwaggerApi.Controllers
         [Route("TestServiceA")]
         public IActionResult TestServiceA(string str)
         {
-            LogHelper.Info(testServiceA.GetHashCode().ToString());
+            //LogHelper.Info(testServiceA.GetHashCode().ToString());
             bool succ = true;
             return Ok(new
             {
@@ -84,10 +84,10 @@ namespace SwaggerApi.Controllers
         [Route("TestServiceB")]
         public async Task<IActionResult> TestServiceB(string str)
         {
-            LogHelper.Info(testServiceB.GetHashCode().ToString());
+            //LogHelper.Info(testServiceB.GetHashCode().ToString());
             string a = String.Empty;
             await Task.Run(()=> {
-                Thread.Sleep(10000);
+                //Thread.Sleep(10000);
                 a = testServiceB.MultiServicesTest(str);
             });
             bool succ = true;
@@ -107,10 +107,10 @@ namespace SwaggerApi.Controllers
         [Route("TestJsonInput")]
         public async Task<IActionResult> TestJsonInput(User user)
         {
-            LogHelper.Info(testServiceB.GetHashCode().ToString());
+            //LogHelper.Info(testServiceB.GetHashCode().ToString());
             string a = String.Empty;
             await Task.Run(() => {
-                Thread.Sleep(10000);
+                //Thread.Sleep(10000);
                 a = testServiceB.MultiServicesTest(user.Name);
             });
             bool succ = true;

@@ -10,3 +10,5 @@
 /DotNetProject/ConsoleDemo/obj
 /DotNetProject/Common/bin/Release/net5.0
 /DotNetProject/Common/obj/Release/net5.0
+/DotNetProject/MqttClientConnection/obj
+/DotNetProject/MqttClientConnection/bin/Debug/net5.0

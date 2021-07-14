@@ -62,7 +62,7 @@ namespace SwaggerApi.Controllers
         public async Task<HttpResponseMessage> TestServiceA(string str)
         {
             ComWebResponseEntity result = new ComWebResponseEntity();
-            LogHelper.Info(testServiceA.GetHashCode().ToString());
+            //LogHelper.Info(testServiceA.GetHashCode().ToString());
             List<string> re = new List<string> { "ssd", "123" };
             Dictionary<int, List<string>> ds = new Dictionary<int, List<string>>();
             ds.Add(1, re);
