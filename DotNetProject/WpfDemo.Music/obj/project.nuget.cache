@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "3p4CgQ0BYRSjSf85enefHV88pjfOl4XXH3hzAqpdPbNwnRI8RLyamq8V0m0CbgR3J6ZYVRbhiBc6BtJdGuSeqA==",
+  "dgSpecHash": "dbtgdf6/f/yDCJzV6guUhmqCKUQqO77W8UmhXX3HouF/39FnO7GpBDecWKR1PMMpH8U/NKEMHnC7XdBhGt9lNQ==",
   "success": true,
-  "projectFilePath": "F:\\2021秋\\DotNetProject\\WpfDemo.Music\\WpfDemo.Music.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\2021秋\\DotNetProject\\WpfDemo.Music\\WpfDemo.Music.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.7\\microsoft.netcore.app.host.win-x64.5.0.7.nupkg.sha512"
+  ],
   "logs": []
 }

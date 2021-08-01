@@ -14,6 +14,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using StackExchange.Redis.Extensions.Core.Configuration;
+using StackExchange.Redis.Extensions.Newtonsoft;
 using SwaggerApi.Implements;
 
 namespace SwaggerApi
@@ -43,6 +45,9 @@ namespace SwaggerApi
         /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
+            //×¢Èëredis·þÎñ
+            var redisConfig =Configuration.GetSection("Redis").Get<RedisConfiguration>();
+            services.AddStackExchangeRedisExtensions<NewtonsoftSerializer>(redisConfig);
 
             services.AddControllers();
             services.AddMvc();
@@ -62,7 +67,8 @@ namespace SwaggerApi
                         options.InputFormatters.Insert(0, GetJsonPatchInputFormatter());
                     })
                     .AddNewtonsoftJson();
-            services.AddTransient<ITestService,TestServiceA>();
+            services.AddCors(option=>option.AddPolicy("cors",policy=>policy.AllowAnyHeader().WithMethods("POST").AllowCredentials().WithOrigins(new[] { "http://192.168.2.1:9000"})));
+            services.AddTransient<ITestService,TestServiceA>(); 
             services.AddTransient<ITestService,TestServiceB>();
         }
 
@@ -77,7 +83,7 @@ namespace SwaggerApi
             }
 
             app.UseRouting();
-
+            app.UseCors("cors");
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -6,6 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using StackExchange.Redis;
+using StackExchange.Redis.Extensions.Core.Abstractions;
+using SwaggerApi.Models;
 
 namespace SwaggerApi.Controllers
 {
@@ -24,17 +27,20 @@ namespace SwaggerApi.Controllers
         private readonly ITestService testServiceA;
         private readonly ITestService testServiceB;
         private readonly ILogger<WeatherForecastController> _logger;
-        
+        private readonly IRedisCacheClient redisCacheClient;
+
         /// <summary>
         /// 
         /// </summary>
         /// <param name="logger"></param>
         /// <param name="services"></param>
-        public WeatherForecastController(ILogger<WeatherForecastController> logger,IEnumerable<ITestService> services)
+        /// <param name="_redisCacheClient"></param>
+        public WeatherForecastController(ILogger<WeatherForecastController> logger,IEnumerable<ITestService> services,IRedisCacheClient _redisCacheClient)
         {
             _logger = logger;
             testServiceA = services.FirstOrDefault(x => x.GetType().Name == "TestServiceA");
             testServiceB = services.FirstOrDefault(x => x.GetType().Name == "TestServiceB");
+            redisCacheClient = _redisCacheClient;
         }
         /// <summary>
         /// Get测试方法
@@ -79,7 +85,7 @@ namespace SwaggerApi.Controllers
         [Route("TestServiceB")]
         public async Task<ComWebResponseEntity> TestServiceB(string str)
         {
-            LogHelper.Info(testServiceB.GetHashCode().ToString());
+            //LogHelper.Info(testServiceB.GetHashCode().ToString());
 
             return new ComWebResponseEntity { Result = true,Content= testServiceA.MultiServicesTest(str) } ;
         }
@@ -99,6 +105,46 @@ namespace SwaggerApi.Controllers
             a1.RemoveAt(2);
             List<double> a2 = a;
             return new ComWebResponseEntity { Result = true, Content = testServiceA.MultiServicesTest(str) };
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("AddProductTest")]
+        public async Task<string> AddProductTest()
+        {
+            var product = new Product { Id=1,Name= "hand sanitizer", Price=100};
+            bool isAdded = await redisCacheClient.Db0.AddAsync("Product", product, DateTimeOffset.Now.AddMinutes(10));
+            //bool isAdded2 = await redisCacheClient.Db0.AddAsync("Product", product.Id=2, DateTimeOffset.Now.AddMinutes(10));
+            return isAdded?"true":"false";
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("DelProductTest")]
+        public async Task<string> DelProductTest()
+        {
+            var product = new Product { Id = 1, Name = "hand sanitizer", Price = 100 };
+            bool isAdded = await redisCacheClient.Db0.RemoveAsync("Product",CommandFlags.None);
+            //bool isAdded2 = await redisCacheClient.Db0.AddAsync("Product", product.Id=2, DateTimeOffset.Now.AddMinutes(10));
+            return isAdded ? "true" : "false";
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("SetProductTest")]
+        public async Task<string> SetProductTest()
+        {
+            var product = new Product { Id = 1, Name = "hand sanitizer", Price = 100 };
+            List<string> ite = new List<string>() { "sd","sdawe"};
+            bool isAdded = await redisCacheClient.Db0.SetAddAsync("set",ite);
+            //bool isAdded2 = await redisCacheClient.Db0.AddAsync("Product", product.Id=2, DateTimeOffset.Now.AddMinutes(10));
+            return isAdded ? "true" : "false";
         }
     }
 }

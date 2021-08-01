@@ -75,12 +75,13 @@
             
             </summary>
         </member>
-        <member name="M:SwaggerApi.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{SwaggerApi.Controllers.WeatherForecastController},System.Collections.Generic.IEnumerable{SwaggerApi.ITestService})">
+        <member name="M:SwaggerApi.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{SwaggerApi.Controllers.WeatherForecastController},System.Collections.Generic.IEnumerable{SwaggerApi.ITestService},StackExchange.Redis.Extensions.Core.Abstractions.IRedisCacheClient)">
             <summary>
             
             </summary>
             <param name="logger"></param>
             <param name="services"></param>
+            <param name="_redisCacheClient"></param>
         </member>
         <member name="M:SwaggerApi.Controllers.WeatherForecastController.Get">
             <summary>
@@ -107,6 +108,24 @@
             TestJsonSeriliza
             </summary>
             <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApi.Controllers.WeatherForecastController.AddProductTest">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApi.Controllers.WeatherForecastController.DelProductTest">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApi.Controllers.WeatherForecastController.SetProductTest">
+            <summary>
+            
+            </summary>
             <returns></returns>
         </member>
         <member name="T:SwaggerApi.Helper.JwtHelper">
@@ -184,6 +203,26 @@
             </summary>
             <param name="str"></param>
             <returns></returns>
+        </member>
+        <member name="T:SwaggerApi.Models.Product">
+            <summary>
+            产品测试
+            </summary>
+        </member>
+        <member name="P:SwaggerApi.Models.Product.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:SwaggerApi.Models.Product.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:SwaggerApi.Models.Product.Price">
+            <summary>
+            价格
+            </summary>
         </member>
         <member name="P:SwaggerApi.Models.TokenModel.Uid">
             <summary>

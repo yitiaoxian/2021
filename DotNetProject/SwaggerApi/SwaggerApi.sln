@@ -5,7 +5,17 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwaggerApi", "SwaggerApi.csproj", "{1D81810E-3B08-4CDB-9493-A895BFBC8117}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MqttClientConnection", "..\MqttClientConnection\MqttClientConnection.csproj", "{0A538130-557C-4C8F-BEA5-B84AC417CE59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MqttClientConnection", "..\MqttClientConnection\MqttClientConnection.csproj", "{0A538130-557C-4C8F-BEA5-B84AC417CE59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "..\Common\Common.csproj", "{3F8606DD-7C54-4AB3-B2B6-49544CD58EFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDemo.Music", "..\WpfDemo.Music\WpfDemo.Music.csproj", "{EC3B9833-CCC6-42CE-8C14-5AB079381771}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDemo", "..\WpfDemo\WpfDemo.csproj", "{4AC6CF10-369E-48DC-BA6E-AB57C10B6B87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDemo", "..\ConsoleDemo\ConsoleDemo.csproj", "{726AF1DD-7FAB-4254-9FBF-494E3D32692D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alibaba", "..\Alibaba\Alibaba.csproj", "{0905FFF9-3A56-4098-8503-E6C8A763A4FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +31,26 @@ Global
 		{0A538130-557C-4C8F-BEA5-B84AC417CE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A538130-557C-4C8F-BEA5-B84AC417CE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A538130-557C-4C8F-BEA5-B84AC417CE59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F8606DD-7C54-4AB3-B2B6-49544CD58EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8606DD-7C54-4AB3-B2B6-49544CD58EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8606DD-7C54-4AB3-B2B6-49544CD58EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8606DD-7C54-4AB3-B2B6-49544CD58EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3B9833-CCC6-42CE-8C14-5AB079381771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3B9833-CCC6-42CE-8C14-5AB079381771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3B9833-CCC6-42CE-8C14-5AB079381771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3B9833-CCC6-42CE-8C14-5AB079381771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AC6CF10-369E-48DC-BA6E-AB57C10B6B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC6CF10-369E-48DC-BA6E-AB57C10B6B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC6CF10-369E-48DC-BA6E-AB57C10B6B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC6CF10-369E-48DC-BA6E-AB57C10B6B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{726AF1DD-7FAB-4254-9FBF-494E3D32692D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{726AF1DD-7FAB-4254-9FBF-494E3D32692D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{726AF1DD-7FAB-4254-9FBF-494E3D32692D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{726AF1DD-7FAB-4254-9FBF-494E3D32692D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0905FFF9-3A56-4098-8503-E6C8A763A4FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0905FFF9-3A56-4098-8503-E6C8A763A4FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0905FFF9-3A56-4098-8503-E6C8A763A4FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0905FFF9-3A56-4098-8503-E6C8A763A4FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

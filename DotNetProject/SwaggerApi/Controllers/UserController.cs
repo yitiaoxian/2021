@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SwaggerApi.Helper;
@@ -63,6 +64,7 @@ namespace SwaggerApi.Controllers
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
+        [EnableCors("cors")]
         [HttpGet]
         [Route("TestServiceA")]
         public IActionResult TestServiceA(string str)
