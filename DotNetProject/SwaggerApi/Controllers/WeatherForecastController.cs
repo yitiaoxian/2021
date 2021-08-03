@@ -124,6 +124,19 @@ namespace SwaggerApi.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [Route("GetProductTest")]
+        public async Task<string> GetProductTest()
+        {
+            var product = new Product { Id = 1, Name = "hand sanitizer", Price = 100 };
+            Product isAdded = await redisCacheClient.Db0.GetAsync<Product>("Product",CommandFlags.None);
+            //bool isAdded2 = await redisCacheClient.Db0.AddAsync("Product", product.Id=2, DateTimeOffset.Now.AddMinutes(10));
+            return isAdded.ToJson();
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
         [Route("DelProductTest")]
         public async Task<string> DelProductTest()
         {

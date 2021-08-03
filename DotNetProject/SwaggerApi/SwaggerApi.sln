@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31424.327
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31521.260
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwaggerApi", "SwaggerApi.csproj", "{1D81810E-3B08-4CDB-9493-A895BFBC8117}"
 EndProject
@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDemo", "..\WpfDemo\WpfDe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDemo", "..\ConsoleDemo\ConsoleDemo.csproj", "{726AF1DD-7FAB-4254-9FBF-494E3D32692D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alibaba", "..\Alibaba\Alibaba.csproj", "{0905FFF9-3A56-4098-8503-E6C8A763A4FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alibaba", "..\Alibaba\Alibaba.csproj", "{0905FFF9-3A56-4098-8503-E6C8A763A4FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateDemo", "..\DelegateDemo\DelegateDemo.csproj", "{788874F7-7DB7-48B7-A030-1A693FC15C71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{0905FFF9-3A56-4098-8503-E6C8A763A4FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0905FFF9-3A56-4098-8503-E6C8A763A4FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0905FFF9-3A56-4098-8503-E6C8A763A4FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{788874F7-7DB7-48B7-A030-1A693FC15C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788874F7-7DB7-48B7-A030-1A693FC15C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788874F7-7DB7-48B7-A030-1A693FC15C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788874F7-7DB7-48B7-A030-1A693FC15C71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

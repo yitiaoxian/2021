@@ -116,6 +116,12 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:SwaggerApi.Controllers.WeatherForecastController.GetProductTest">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:SwaggerApi.Controllers.WeatherForecastController.DelProductTest">
             <summary>
             
